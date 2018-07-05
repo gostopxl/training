@@ -1,4 +1,4 @@
-package com.training.test.chen;
+package com.training.test.diao;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
