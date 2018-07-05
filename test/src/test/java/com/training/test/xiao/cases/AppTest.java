@@ -11,6 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import com.training.test.xiao.basic.Browsers;
 import com.training.test.xiao.pages.TestPage;
 
 public class AppTest {
@@ -21,10 +22,11 @@ public class AppTest {
 
 	@Before
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.gecko.driver", "lib/geckodriver.exe");
-		driver = new FirefoxDriver();
-//		baseUrl = "https://www.katalon.com/";
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		System.setProperty("webdriver.gecko.driver", "lib/geckodriver.exe");
+//		driver = new FirefoxDriver();
+////		baseUrl = "https://www.katalon.com/";
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver = Browsers.myDriver();
 	}
 
 	@Test
