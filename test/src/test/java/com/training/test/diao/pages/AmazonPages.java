@@ -17,7 +17,7 @@ public class AmazonPages {
 	@FindBy(xpath="/html/body/div[1]/header/div/div[1]/div[4]/div[4]/div[3]/div[3]/div/a[2]/span[1]")
 	public WebElement GameSpan;
 	
-	//game's name;s
+	//game's name;
 	@FindBy(xpath="/html/body/div[2]/div[4]/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div/ol/li[1]/div[1]/a/span")
 	public WebElement GameName;
 	//add to list
