@@ -6,22 +6,22 @@ import static org.junit.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
-import com.training.test.luo.basci.Browsers;
-import com.training.test.luo.pages.TestPage1;
+import com.training.test.luo.basci.Browser;
+import com.training.test.luo.pages.TestPage;
 
-public class AppTest {
+public class AppTestCase {
   private WebDriver driver;
 
   @Before
   public void setUp() throws Exception {
 //    driver = new FirefoxDriver();
-    driver = Browsers.myDriver();
+    driver = Browser.myDriver();
   }
 
   @Test
   public void testUntitledTestCase3() throws Exception {
     driver.get("https://www.walmart.com/");
-    TestPage1 tp = new TestPage1(driver);
+    TestPage tp = new TestPage(driver);
     Actions action = new Actions(driver);
     action.moveToElement(tp.clickBtn1).perform();
     Thread.sleep(2000);

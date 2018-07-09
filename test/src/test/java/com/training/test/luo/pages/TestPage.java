@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TestPage1 {
+public class TestPage {
 	public WebDriver driver;
 	
 	@FindBy (xpath="/html/body/div[1]/div/div/div/header/div/div[3]/div/div/div[1]/div/button")
@@ -29,7 +29,7 @@ public class TestPage1 {
 	@FindBy (xpath="/html/body/div[1]/div/div/div[2]/div/section/form/div[1]/div/label/div[1]/span[2]")
 	public WebElement errMgs;
 	
-	public TestPage1(WebDriver driver) {
+	public TestPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
