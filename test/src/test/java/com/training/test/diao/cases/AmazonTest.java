@@ -28,6 +28,7 @@ public class AmazonTest{
 		Actions action = new Actions(driver);	
 		//Mouse mobile hovering
 		action.moveToElement(AP.departmentsSpan).perform();
+		//sleep
 		Thread.sleep(2000);
 		AP.AppstoreSpan.click();
 		action.moveToElement(AP.AppstoreSpan).perform();		
