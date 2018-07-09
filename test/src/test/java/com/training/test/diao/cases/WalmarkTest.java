@@ -40,7 +40,7 @@ public class WalmarkTest {
 		 wPage.CheckOut.click();
 		 Thread.sleep(2000);
 		 wPage.SignIn.click();		 
-		 assertEquals("ErrorEmail address is required.", wPage.errmsg1.getText());		 
+		 assertEquals("ErrorEmail address is required.", wPage.errmsg1.getText().trim());		 
 		 assertEquals("Password is required.", wPage.errmsg2.getText());
 	}
 	@After
