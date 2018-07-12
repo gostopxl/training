@@ -8,11 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 public class WalmarkPage {
 	
 	
-	@FindBy(xpath="/html/body/div[1]/div/div/div/header/div/div[3]/div/div/div[1]/div/button")
-	public WebElement Btn;
+	@FindBy(xpath="/html/body/div[1]/div/div/div/header/div/div[3]/div/div/div[1]/div/button") 
+	// TT: 如果xpath太长了要缩短一点，比如 //div[@class='Header-leftNav']/button
+	public WebElement Btn; //TT: 命名要规范，首字母是小写，btn对于别人来说不知道这个是什么东西
+	
 	//movies Music Book 
 	@FindBy(xpath="/html/body/div/div/div/div/header/div/div[1]/div[2]/div/nav/div/div[2]/div[2]/div[5]/button")
-	public WebElement MMB;
+	public WebElement MMB; // TT：尽量不要使用缩写词，这个是公共调用的，全称写法moviesMusicBook
 	
 	@FindBy(xpath="/html/body/div[1]/div/div/div/header/div/div[1]/div[2]/div/nav/div/div[2]/div[2]/div[5]/div[1]/div[3]/div[2]/div[1]/div/a[6]")
 	public WebElement TVShow;
