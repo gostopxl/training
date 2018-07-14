@@ -1,18 +1,11 @@
 package com.training.test.diao.cases;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.os.WindowsUtils;
-import org.openqa.selenium.support.PageFactory;
-
-import com.inspirus.enigma.util.page.urm.web55.BooksWeb55PageInfo;
 import com.training.test.diao.basic.Browsers;
 import com.training.test.diao.pages.WalmarkPage;
 
